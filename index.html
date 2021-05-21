@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қазақстан халқының өсіп-өнуін статистикалық талдау</title>
+    <link rel="icon" href="flaticon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="js/nationalComposition.js" defer></script>
+    <script src="js/gender.js" defer></script>
+    <script src="js/growthRate.js" defer></script>
+    <script src="js/growthRatePercent.js" defer></script>
+    <script src="js/birthAndDeathRate.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body style="background: #e8e8ea;">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="flaticon.png" alt="">
+    <a class="navbar-brand" href="#">Yertayeva S.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 justify-content-around">
+        <li class="nav-item active">
+          <a class="nav-link" href="#nationalComposition">Ұлттық құрам</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gender">Жыңыс бойынша</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#growthRate">Халық саны</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#growthRatePercent">Өсу қарқыны</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#birthAndDeathRate">Өлім-жітім көрсеткіші</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="m-3 p-md-5 p-3" style="border-radius: 5px; background: white;">
+      <h3 class="diagram-title" style="color: #717070; font-family: Avenir Next,sans-serif;">Ұлттық құрам (мың адам)</h3>
+      <hr>
+      <canvas id="nationalComposition" style="width: 100%; height: 80vh;"></canvas>
+    </div>
+
+    <div class="m-3 p-md-5 p-3" style="border-radius: 5px; background: white;">
+      <h3 class="diagram-title" style="color: #717070; font-family: Avenir Next,sans-serif;">
+        Жыныс бойынша
+      </h3>
+      <hr>
+      <canvas id="gender"></canvas>
+    </div>
+
+    <div class="m-3 p-md-5 p-3" style="border-radius: 5px; background: white;">
+      <h3 class="diagram-title" style="color: #717070; font-family: Avenir Next,sans-serif;">Халық саны (мың адам)</h3>
+      <hr>
+      <canvas id="growthRate"></canvas>
+    </div>
+
+    <div class="m-3 p-md-5 p-3" style="border-radius: 5px; background: white;">
+      <h3 class="diagram-title" style="color: #717070; font-family: Avenir Next,sans-serif;">Халық саны өсу қарқыны</h3>
+      <hr>
+      <canvas id="growthRatePercent"></canvas>
+    </div>
+
+  <div class="m-3 p-md-5 p-3" style="border-radius: 5px; background: white;">
+    <h3 class="diagram-title" style="color: #717070; font-family: Avenir Next,sans-serif;">Өлім-жітім көрсеткіші</h3>
+    <hr>
+    <canvas id="birthAndDeathRate" style="width: 100%; height: 70vh;"></canvas>
+  </div>
+
+  </body>
+</html>
+
+<style>
+  .diagram-title { font-size: calc(1em + 1vw); }
+</style>
